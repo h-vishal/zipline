@@ -24,7 +24,7 @@ from zipline.testing.fixtures import (
     WithAssetFinder,
     ZiplineTestCase,
 )
-from zipline.utils.calendars import get_calendar
+from trading_calendars import get_calendar
 
 
 class WithPanelBarReader(WithAssetFinder):

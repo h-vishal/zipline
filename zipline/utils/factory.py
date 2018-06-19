@@ -24,7 +24,7 @@ from datetime import timedelta, datetime
 from zipline.sources import SpecificEquityTrades
 from zipline.finance.trading import SimulationParameters
 from zipline.sources.test_source import create_trade
-from zipline.utils.calendars import get_calendar
+from trading_calendars import get_calendar
 
 
 def create_simulation_parameters(year=2006,

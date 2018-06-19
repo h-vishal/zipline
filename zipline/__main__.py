@@ -7,7 +7,7 @@ import pandas as pd
 from six import text_type
 
 from zipline.data import bundles as bundles_module
-from zipline.utils.calendars.calendar_utils import get_calendar
+from trading_calendars.calendar_utils import get_calendar
 from zipline.utils.compat import wraps
 from zipline.utils.cli import Date, Timestamp
 from zipline.utils.run_algo import _run, load_extensions

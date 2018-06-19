@@ -36,7 +36,7 @@ from zipline.testing.predicates import (
 )
 from zipline.utils.cache import dataframe_cache
 from zipline.utils.functional import apply
-from zipline.utils.calendars import TradingCalendar, get_calendar
+from trading_calendars import TradingCalendar, get_calendar
 import zipline.utils.paths as pth
 
 

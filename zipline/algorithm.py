@@ -109,9 +109,7 @@ from zipline.utils.input_validation import (
     optional,
 )
 from zipline.utils.numpy_utils import int64_dtype
-from zipline.utils.calendars.trading_calendar import days_at_time
 from zipline.utils.cache import ExpiringCache
-from zipline.utils.calendars import get_calendar
 from zipline.utils.pandas_utils import clear_dataframe_indexer_caches
 
 import zipline.utils.events
@@ -138,6 +136,9 @@ from zipline.sources.requests_csv import PandasRequestsCSV
 from zipline.gens.sim_engine import MinuteSimulationClock
 from zipline.sources.benchmark_source import BenchmarkSource
 from zipline.zipline_warnings import ZiplineDeprecationWarning
+
+from trading_calendars.trading_calendar import days_at_time
+from trading_calendars import get_calendar
 
 
 log = logbook.Logger("ZiplineLog")

@@ -19,7 +19,7 @@ from zipline.pipeline.data import USEquityPricing
 from zipline.pipeline.loaders import USEquityPricingLoader
 from zipline.pipeline.loaders.testing import make_seeded_random_loader
 from zipline.protocol import BarData
-from zipline.utils.calendars import (
+from trading_calendars import (
     get_calendar,
     register_calendar,
 )

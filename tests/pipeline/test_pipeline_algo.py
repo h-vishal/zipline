@@ -60,7 +60,7 @@ from zipline.testing.fixtures import (
     WithBcolzEquityDailyBarReaderFromCSVs,
     ZiplineTestCase,
 )
-from zipline.utils.calendars import get_calendar
+from trading_calendars import get_calendar
 
 TEST_RESOURCE_PATH = join(
     dirname(dirname(realpath(__file__))),  # zipline_repo/tests

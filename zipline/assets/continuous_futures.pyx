@@ -36,7 +36,7 @@ from numpy cimport long_t, int64_t
 from pandas import Timestamp
 import warnings
 
-from zipline.utils.calendars import get_calendar
+from trading_calendars import get_calendar
 
 
 def delivery_predicate(codes, contract):

@@ -118,7 +118,7 @@ from zipline.test_algorithms import (
 import zipline.test_algorithms as zta
 from zipline.testing.predicates import assert_equal
 from zipline.utils.api_support import ZiplineAPI
-from zipline.utils.calendars import get_calendar, register_calendar
+from trading_calendars import get_calendar, register_calendar
 from zipline.utils.context_tricks import CallbackManager, nop_context
 from zipline.utils.events import (
     date_rules,
@@ -435,7 +435,7 @@ def log_nyse_close(context, data):
         erroring_algotext = dedent(
             """
             from zipline.api import schedule_function
-            from zipline.utils.calendars import get_calendar
+            from trading_calendars import get_calendar
 
             def initialize(context):
                 schedule_function(func=my_func, calendar=get_calendar('NYSE'))

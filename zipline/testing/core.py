@@ -50,7 +50,7 @@ from zipline.pipeline.engine import SimplePipelineEngine
 from zipline.pipeline.factors import CustomFactor
 from zipline.pipeline.loaders.testing import make_seeded_random_loader
 from zipline.utils import security_list
-from zipline.utils.calendars import get_calendar
+from trading_calendars import get_calendar
 from zipline.utils.input_validation import expect_dimensions
 from zipline.utils.numpy_utils import as_column, isnat
 from zipline.utils.pandas_utils import timedelta_to_integral_seconds

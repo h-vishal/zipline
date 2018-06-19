@@ -23,7 +23,7 @@ from sqlalchemy import create_engine
 from zipline.assets import AssetDBWriter, AssetFinder
 from zipline.assets.continuous_futures import CHAIN_PREDICATES
 from zipline.data.loader import load_market_data
-from zipline.utils.calendars import get_calendar
+from trading_calendars import get_calendar
 from zipline.utils.memoize import remember_last
 
 log = logbook.Logger('Trading')

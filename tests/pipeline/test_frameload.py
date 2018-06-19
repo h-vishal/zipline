@@ -24,7 +24,7 @@ from zipline.pipeline.data import USEquityPricing
 from zipline.pipeline.loaders.frame import (
     DataFrameLoader,
 )
-from zipline.utils.calendars import get_calendar
+from trading_calendars import get_calendar
 
 
 class DataFrameLoaderTestCase(TestCase):

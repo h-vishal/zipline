@@ -40,8 +40,8 @@ from zipline.testing.fixtures import (
     WithDataPortal,
     ZiplineTestCase,
 )
-from zipline.utils.calendars import get_calendar
-from zipline.utils.calendars.trading_calendar import days_at_time
+from trading_calendars import get_calendar
+from trading_calendars.trading_calendar import days_at_time
 
 OHLC = ["open", "high", "low", "close"]
 OHLCP = OHLC + ["price"]

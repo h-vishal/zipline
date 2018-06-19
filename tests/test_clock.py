@@ -9,8 +9,8 @@ from zipline.gens.sim_engine import (
     SESSION_END
 )
 
-from zipline.utils.calendars import get_calendar
-from zipline.utils.calendars.trading_calendar import days_at_time
+from trading_calendars import get_calendar
+from trading_calendars.trading_calendar import days_at_time
 
 
 class TestClock(TestCase):

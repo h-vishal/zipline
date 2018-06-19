@@ -24,7 +24,7 @@ from six import iteritems
 from six.moves import range, map
 
 import zipline.utils.events
-from zipline.utils.calendars import get_calendar
+from trading_calendars import get_calendar
 from zipline.utils.events import (
     EventRule,
     StatelessRule,

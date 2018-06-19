@@ -2,7 +2,7 @@ import zipline.utils.factory as factory
 from zipline.testing.core import create_data_portal_from_trade_history
 
 from zipline.test_algorithms import TestAlgorithm
-from zipline.utils.calendars import get_calendar
+from trading_calendars import get_calendar
 
 
 def create_test_zipline(**config):

@@ -21,9 +21,9 @@ from . import data
 from . import finance
 from . import gens
 from . import utils
-from .utils.calendars import get_calendar
 from .utils.run_algo import run_algorithm
 from ._version import get_versions
+from trading_calendars import get_calendar
 
 # These need to happen after the other imports.
 from . algorithm import TradingAlgorithm
@@ -33,7 +33,7 @@ from . import api
 # PERF: Fire a warning if calendars were instantiated during zipline import.
 # Having calendars doesn't break anything per-se, but it makes zipline imports
 # noticeably slower, which becomes particularly noticeable in the Zipline CLI.
-from zipline.utils.calendars.calendar_utils import global_calendar_dispatcher
+from trading_calendars.calendar_utils import global_calendar_dispatcher
 if global_calendar_dispatcher._calendars:
     import warnings
     warnings.warn(

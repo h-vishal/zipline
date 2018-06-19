@@ -24,7 +24,7 @@ from ..utils.paths import (
     cache_root,
     data_root,
 )
-from zipline.utils.calendars import get_calendar
+from trading_calendars import get_calendar
 
 
 logger = logbook.Logger('Loader')
