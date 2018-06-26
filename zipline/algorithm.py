@@ -34,6 +34,8 @@ from six import (
     string_types,
     viewkeys,
 )
+from trading_calendars.trading_calendar import days_at_time
+from trading_calendars import get_calendar
 
 from zipline._protocol import handle_non_market_minutes
 from zipline.assets.synthetic import make_simple_equity_info
@@ -136,9 +138,6 @@ from zipline.sources.requests_csv import PandasRequestsCSV
 from zipline.gens.sim_engine import MinuteSimulationClock
 from zipline.sources.benchmark_source import BenchmarkSource
 from zipline.zipline_warnings import ZiplineDeprecationWarning
-
-from trading_calendars.trading_calendar import days_at_time
-from trading_calendars import get_calendar
 
 
 log = logbook.Logger("ZiplineLog")

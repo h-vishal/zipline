@@ -7,6 +7,7 @@ import warnings
 from contextlib2 import ExitStack
 import click
 import pandas as pd
+from trading_calendars import get_calendar
 from toolz import curry, complement, take
 
 from ..us_equity_pricing import (
@@ -30,7 +31,6 @@ from zipline.utils.compat import mappingproxy
 from zipline.utils.input_validation import ensure_timestamp, optionally
 import zipline.utils.paths as pth
 from zipline.utils.preprocess import preprocess
-from trading_calendars import get_calendar
 
 
 def asset_db_path(bundle_name, timestr, environ=None, db_version=None):

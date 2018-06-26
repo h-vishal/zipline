@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import os
-
+from trading_calendars import get_calendar
 
 # This is *not* a place to dump arbitrary classes/modules for convenience,
 # it is a place to expose the public interfaces.
@@ -23,7 +23,6 @@ from . import gens
 from . import utils
 from .utils.run_algo import run_algorithm
 from ._version import get_versions
-from trading_calendars import get_calendar
 
 # These need to happen after the other imports.
 from . algorithm import TradingAlgorithm
