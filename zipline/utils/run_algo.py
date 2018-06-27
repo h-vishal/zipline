@@ -75,6 +75,9 @@ def _run(handle_data,
 
     This is shared between the cli and :func:`zipline.run_algo`.
     """
+    if benchmark_returns is None:
+        benchmark_returns, _ = load_market_data(environ=environ)
+
     if algotext is not None:
         if local_namespace:
             ip = get_ipython()  # noqa
@@ -331,9 +334,6 @@ def run_algorithm(start,
     zipline.data.bundles.bundles : The available data bundles.
     """
     load_extensions(default_extension, extensions, strict_extensions, environ)
-
-    if benchmark_returns is None:
-        benchmark_returns, _ = load_market_data(environ=environ)
 
     return _run(
         handle_data=handle_data,
