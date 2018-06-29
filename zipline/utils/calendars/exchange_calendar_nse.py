@@ -44,8 +44,9 @@ class NSEExchangeCalendar(TradingCalendar):
     - Closed on 10/15/2014 due to assembly elections
 
     These holidays are added using adhoc_holidays from a CSV file because a lot of them are based on the lunar calendar.
-    The file contains holidays from 2011 to 2018.
     TODO : Explore a better way to add holidays
+    TODO : Make date format consistent in the holidays CSV file
+    TODO : Add extra trading days from the extra days CSV file
     """
 
     @staticmethod
