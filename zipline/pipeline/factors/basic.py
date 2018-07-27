@@ -159,7 +159,7 @@ def exponential_weights(length, decay_rate):
     -------
     weights : ndarray[float64]
     """
-    return full(length, decay_rate, float64_dtype) ** arange(length + 1, 1, -1)
+    return full(length, decay_rate, float64_dtype) ** arange(length, 0, -1)
 
 
 class _ExponentialWeightedFactor(SingleInputMixin, CustomFactor):
